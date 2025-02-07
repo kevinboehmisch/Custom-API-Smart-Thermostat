@@ -11,7 +11,7 @@ This project is an open-source smart thermostat built using an ESP32 microcontro
 ## Components Required
 - **ESP32 Development Board**
 - **DHT11 Temperature & Humidity Sensor**
-- **DC Motor (extracted from a budget thermostat)**
+- **DC Motor (extracted from a budget smart thermostat)**
 - **H-Bridge Motor Driver (to reverse motor polarity)**
 - **Resistors** (as required for pull-up configurations)
 - **Breadboard & Jumper Wires**
@@ -29,12 +29,15 @@ Refer to the images for the wiring setup:
   - **Motor terminals** → Heating valve motor
   - **H-Bridge inputs** → ESP32 GPIO18 (Motor_A) and GPIO19 (Motor_B)
   - **Power** → External 5V supply (if required)
+ 
+- The H-Bridge ist build the following way:
+  ![image](https://github.com/user-attachments/assets/9c0a41c6-0cad-4613-8058-01a3acc53919)
+
 
 ## Installation Guide
 1. Clone this repository:
    ```sh
-   git clone https://github.com/YOUR_GITHUB_USERNAME/smart-thermostat-esp32.git
-   cd smart-thermostat-esp32
+   https://github.com/kevinboehmisch/Custom-API-Smart-Thermostat.git
    ```
 2. Install the required Arduino libraries:
    - `DHT11.h`
